@@ -1,55 +1,26 @@
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
   padding: 16px;
-  border: 1px solid #eeeeee;
-  border-radius: 8px;
-  background: #ebebeb;
-  width: 180px;
-  transition: box-shadow 0.2s;  /* ← この1行を追加（変化をなめらかに）*/
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  transition: box-shadow 0.2s;
 }
-
 .card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* 影を付ける */
-}
-
-
-
-.button:hover {
-  background: #1d4ed8;  /* 乗せると少し濃い青に */
-}
-
-
-.price {
-  color: #e8500e;
-  font-size: 16px;
-  margin: 0 0 4px 0;
-}
-
-.stock {
-  color: #666666;
-  font-size: 14px;
-  margin: 0;
-}
-#out-of-stock {
-  color: red;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .name {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0 0 8px 0;
-  display: flex;        /* アイコンと文字を横並びに */
-  align-items: center;  /* 高さを中央でそろえる */
-  gap: 6px;             /* アイコンと文字のすき間 */
-}
-
-.button {
-  margin-top: 12px;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 6px;
-  background: #2563eb;
-  color: #ffffff;
-  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 6px;
+  margin: 0;
+  font-size: 16px;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
 }

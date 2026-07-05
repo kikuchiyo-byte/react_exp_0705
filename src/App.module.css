@@ -1,21 +1,24 @@
-.list {
-  display: flex;        /* 横並びにする */
-  flex-wrap: wrap;      /* はみ出たら折り返す */
-  gap: 10px;            /* カードどうしのすき間 */
-  padding: 16px;
-   justify-content: center; /* 中央寄せ */
+/* src/App.module.css */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f6f8;
 }
 
-.list button {
-   width: 90%;
-    margin-top: 12px;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 10px;
-    background: #eb25db;
-    color: #ffffff;
-    cursor: pointer;
+.main {
+  flex: 1;
+  padding: 24px;
 }
-body{
-  background-color: #535353;
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
 }
