@@ -1,0 +1,21 @@
+.list {
+  display: flex;        /* 横並びにする */
+  flex-wrap: wrap;      /* はみ出たら折り返す */
+  gap: 10px;            /* カードどうしのすき間 */
+  padding: 16px;
+   justify-content: center; /* 中央寄せ */
+}
+
+.list button {
+   width: 90%;
+    margin-top: 12px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #eb25db;
+    color: #ffffff;
+    cursor: pointer;
+}
+body{
+  background-color: #535353;
+}
